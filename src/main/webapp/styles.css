@@ -1,0 +1,248 @@
+.navbar {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    box-shadow:  1px 1px 5px 1px #ccc;
+}
+
+
+
+main {
+    font-size: 18px;
+    font-family: 'Rubik';
+    background: #fafafa;
+}
+
+
+.project-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+
+.project-description .description-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.description-title {
+    margin-bottom: 80px;
+    font-family: 'Montserrat';
+    text-align: left;
+    font-weight: 500;
+}
+
+.description-text{
+    width: 70%;
+    font-size: 1.2rem;
+    color: #575757;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+    background: linear-gradient(to right, #FC77AE 0%, #ff9085 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quickstart-btns {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.btn-start1{
+    border-radius: 25px;
+    border-style: none;
+    padding: 15px 30px;
+    background: #3f447e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-start1:hover{
+    box-shadow:  0.2rem 0.2rem 20px #E48DDE ;
+}
+
+.btn-start2:hover{
+    box-shadow:  0.2rem 0.2rem 20px #E48DDE ;
+}
+.btn-start2{
+    border-radius: 25px;
+    border-style: none;
+    padding: 15px 30px;
+    background: #3f447e00;
+    color: #3f447e;
+    border: 3px solid #3f447e;
+    font-weight: bold;
+}
+.project-description .description-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-description .description-image .vector-img {
+    width: 120%;
+    position: absolute;
+    z-index: 10;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 2s;
+}
+
+.vector-img-mobile{
+    width: 30%;
+}
+
+.project-description .description-image .shadow-img {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    animation-name: shadowGrow;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 2s;
+}
+
+
+
+
+
+.divider{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.line{
+    width: 35%;
+    height: 2px;
+    background: linear-gradient(to right, #BF80E9 0%, #E48DDE 53%);
+    
+}
+
+.arrow-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down i{
+    font-size: 40px;
+    background: linear-gradient(to right, #BF80E9 0%, #E48DDE 53%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bounce 2s infinite;
+}
+
+.project-details {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-details h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    background: linear-gradient(to right, #FC77AE 0%, #ff9085 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.full-description{
+    font-size: 1.2rem;
+    color: #575757;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.fact-img{
+    width: 80%;
+}
+
+footer{
+    box-shadow:  5px 5px 5px 6px #ccc;
+    padding: 12px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+@keyframes float {
+    0% {
+        top: 40px;
+    }
+    100% {
+        top: -10px;
+    }
+}
+
+@keyframes shadowGrow {
+    0% {
+        top: 450px;
+        scale: 1;
+    }
+    100% {
+        top: 460px;
+        scale: 4;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @media (max-width:993px){
+    .description-title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .quickstart-btns {
+        width: 70%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        margin-bottom: 50px;
+    }
+  }

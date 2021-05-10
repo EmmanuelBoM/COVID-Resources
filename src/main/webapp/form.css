@@ -1,0 +1,61 @@
+.navbar {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    box-shadow:  1px 1px 5px 1px #ccc;
+}
+
+main{
+    margin-top: 0 !important;
+    font-size: 18px;
+    font-family: 'Rubik';
+    background: #fafafa;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.title-cont {
+    
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title span {
+    font-weight: bold;
+    background: linear-gradient(to right, #FC77AE 0%, #ff9085 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offer-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.submit-offer {
+    width: 100%;
+}
+
+footer{
+    box-shadow:  5px 5px 5px 6px #ccc;
+    padding: 12px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
